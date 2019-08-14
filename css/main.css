@@ -1,0 +1,81 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* The CSS box-sizing property allows us to include the
+padding and border in an element's total width and height. */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+nav {
+    background-color: orange;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* flex allows "flexibility", must use display: flex*/
+/*em refer to default font size; ie relativity*/
+
+nav a{
+    margin: .2em;
+    color: darkred;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.wrapper {
+    background-color: whitesmoke;
+}
+
+h1, h2, h3 {
+    color: red;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(17, 78, 209);
+}
+
+.mainimage {
+    width:100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.flex-container{
+    display:flex;
+    width:100%;
+    background-color: antiquewhite;
+}
+
+main{
+    flex: 2;
+    margin: 1em;
+}
+
+aside{
+    flex:1;
+    margin: 1em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    color:goldenrod;
+}
